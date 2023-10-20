@@ -1,0 +1,37 @@
+.main-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+}
+
+.main-content-img {
+	width: 50%;
+}
+
+.change-img-button-container {
+	position: absolute;
+}
+
+.main-info-container {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.main-info {
+	width: 70%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.main-info-container h1 {
+	font-size: 70px;
+}
+
+.main-info-container p {
+	font-size: 23px;
+	color: var(--dark-gray);
+}

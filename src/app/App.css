@@ -1,5 +1,11 @@
-@import '../reset.css';
-
 #root {
-	max-width: 1440px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.App {
+	/* background-color: gray; */
+	/* max-width: 1440px; */
+	width: 100%;
 }

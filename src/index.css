@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+@import './reset.css';
 
 :root {
 	font-family: 'League Spartan', sans-serif;
@@ -12,7 +13,7 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 
-	/* Primray colors */
+	/* Primary colors */
 	--dark-gray: hsl(0, 0%, 63%);
 	--black: hsl(0, 0%, 0%);
 	--white: hsl(0, 0%, 100%);

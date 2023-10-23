@@ -14,7 +14,7 @@
 	-webkit-text-size-adjust: 100%;
 
 	/* Primary colors */
-	--dark-gray: hsl(0, 0%, 63%);
+	--dark-gray: #a1a1a1;
 	--black: hsl(0, 0%, 0%);
 	--white: hsl(0, 0%, 100%);
 	--very-dark-grey: hsl(0, 0%, 27%);

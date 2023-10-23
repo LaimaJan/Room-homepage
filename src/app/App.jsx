@@ -9,6 +9,9 @@ import MobileHeroImage1 from './images/mobile-image-hero-1.jpg';
 import MobileHeroImage2 from './images/mobile-image-hero-2.jpg';
 import MobileHeroImage3 from './images/mobile-image-hero-3.jpg';
 
+import AboutDarkImg from './images/image-about-dark.jpg';
+import AboutLightImg from './images/image-about-light.jpg';
+
 function App() {
 	const heroInfo = [
 		{
@@ -38,8 +41,10 @@ function App() {
 
 				<section>
 					<div className="additional-info">
-						<div className="image-container"></div>
-						<article>
+						<div className="image-container">
+							<img src={AboutDarkImg} alt="dark theme interior image" />
+						</div>
+						<article className="additional-furniture-information">
 							<h1>About our furniture</h1>
 							<p>
 								Our munltifunctinoal collection blends design and function to
@@ -52,7 +57,9 @@ function App() {
 							</p>
 						</article>
 
-						<div className="image-container"></div>
+						<div className="image-container">
+							<img src={AboutLightImg} alt="light theme interior image" />
+						</div>
 					</div>
 				</section>
 			</div>

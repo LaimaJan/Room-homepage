@@ -1,4 +1,5 @@
 .main-content {
+	max-height: 840px;
 	height: 100%;
 	display: flex;
 	flex-direction: row;
@@ -7,33 +8,36 @@
 }
 
 .main-content-img {
-	width: 60%;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
 }
 
 .main-info-container {
 	height: 100%;
-	width: 40%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	position: relative;
 }
 
 .main-info {
-	width: 70%;
+	height: 534px;
 	text-align: left;
 	display: flex;
 	flex-direction: column;
 	gap: 35px;
+	margin: 0 70px;
 }
 
 .main-info-container h1 {
-	font-size: 60px;
+	font-size: 45px;
 	font-weight: 600;
+	padding-top: 90px;
 }
 
 .main-info-container p {
 	max-width: 610px;
-	font-size: 22px;
+	font-size: 18px;
 	color: var(--dark-gray);
 
 	line-height: 1.3;
@@ -43,7 +47,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 40px;
+	gap: 20px;
 }
 
 .shop-now-container p {
@@ -58,16 +62,16 @@
 }
 
 .change-img-button-container {
-	position: absolute;
 	display: flex;
 	flex-direction: row;
+	position: absolute;
 	bottom: 0;
-	left: 60%;
+	left: 0;
 }
 
 .change-img-button-container > * {
 	background-color: var(--black);
-	padding: 30px 40px;
+	padding: 30px 33px;
 }
 
 .change-img-button-container > *:hover {

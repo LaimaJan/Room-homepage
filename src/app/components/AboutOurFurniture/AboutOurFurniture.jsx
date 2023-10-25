@@ -1,5 +1,5 @@
-import AboutDarkImg from '../../images/image-about-dark.jpg';
-import AboutLightImg from '../../images/image-about-light.jpg';
+import AboutDarkImgDesktop from '../../images/image-about-dark.jpg';
+import AboutLightImgDesktop from '../../images/image-about-light.jpg';
 import './AboutOurFurniture.css';
 
 export default function AboutOurFurniture() {
@@ -7,7 +7,7 @@ export default function AboutOurFurniture() {
 		<section>
 			<div className="additional-info">
 				<div className="image-container">
-					<img src={AboutDarkImg} alt="dark theme interior image" />
+					<img src={AboutDarkImgDesktop} alt="dark theme interior image" />
 				</div>
 				<article className="additional-furniture-information">
 					<h1>About our furniture</h1>
@@ -22,7 +22,7 @@ export default function AboutOurFurniture() {
 				</article>
 
 				<div className="image-container">
-					<img src={AboutLightImg} alt="light theme interior image" />
+					<img src={AboutLightImgDesktop} alt="light theme interior image" />
 				</div>
 			</div>
 		</section>

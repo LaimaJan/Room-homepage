@@ -38,3 +38,28 @@
 	color: var(--dark-gray);
 	line-height: 1.3;
 }
+
+@media screen and (max-width: 1360px) {
+	.additional-info {
+		flex-direction: column;
+		max-width: 375px;
+	}
+
+	.image-container img {
+		max-width: 375px;
+	}
+
+	.additional-furniture-information {
+		padding: 0;
+		margin: 55px 35px;
+	}
+
+	.additional-furniture-information h1 {
+		font-size: 14px;
+		letter-spacing: 8px;
+	}
+
+	.additional-furniture-information p {
+		font-size: 15px;
+	}
+}

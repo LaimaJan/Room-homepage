@@ -1,6 +1,4 @@
 .main-content {
-	max-height: 840px;
-	height: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -10,36 +8,45 @@
 .main-content-img {
 	max-width: 100%;
 	max-height: 100%;
-	object-fit: contain;
+	object-fit: cover;
+	position: relative;
+}
+
+.change-img-button-container-mobile {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 312px;
 }
 
 .main-info-container {
-	height: 100%;
+	height: 534px;
+
 	display: flex;
 	flex-direction: column;
 	position: relative;
 }
 
 .main-info {
-	height: 534px;
+	position: relative;
+	top: 0;
 	text-align: left;
 	display: flex;
 	flex-direction: column;
-	gap: 35px;
+	gap: 25px;
 	margin: 0 70px;
 }
 
 .main-info-container h1 {
 	font-size: 45px;
 	font-weight: 600;
-	padding-top: 90px;
+	padding-top: 80px;
 }
 
 .main-info-container p {
 	max-width: 610px;
 	font-size: 18px;
 	color: var(--dark-gray);
-
 	line-height: 1.3;
 }
 
@@ -48,6 +55,8 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 20px;
+	top: 320px;
+	position: absolute;
 }
 
 .shop-now-container p {
@@ -77,4 +86,67 @@
 .change-img-button-container > *:hover {
 	background-color: var(--dark-gray);
 	cursor: pointer;
+}
+
+@media screen and (max-width: 1360px) {
+	.main-content {
+		max-height: 100%;
+		height: 100%;
+		align-items: center;
+		position: relative;
+		flex-direction: column;
+	}
+
+	.change-img-button-container-mobile {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.change-img-button-container-mobile > * {
+		background-color: var(--black);
+		padding: 10px 20px;
+	}
+
+	.change-img-button-container-mobile > *:hover {
+		background-color: var(--dark-gray);
+		cursor: pointer;
+	}
+
+	.main-info-container {
+		height: 390px;
+	}
+
+	.main-info {
+		height: 100%;
+		gap: 25px;
+		margin: 0;
+		margin: 55px 35px 100px;
+	}
+
+	.main-info-container h1 {
+		padding-top: 0;
+		font-size: 36px;
+	}
+
+	.main-info-container p {
+		width: 100%;
+		font-size: 15px;
+	}
+
+	.shop-now-container {
+		gap: 20px;
+		top: 260px;
+		position: absolute;
+	}
+
+	.shop-now-container p {
+		width: fit-content;
+		text-transform: uppercase;
+		letter-spacing: 15px;
+		color: var(--black);
+	}
+
+	.change-img-button-container {
+		display: none;
+	}
 }

@@ -7,3 +7,9 @@
 .App {
 	max-width: 1440px;
 }
+
+@media screen and (max-width: 1360px) {
+	.App {
+		max-width: 375px;
+	}
+}

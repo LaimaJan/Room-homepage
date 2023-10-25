@@ -54,7 +54,7 @@ export default function MainContent({ appWidth }) {
 	};
 
 	const selectedImage =
-		appWidth > 375
+		appWidth > 1360
 			? mainSectionImages[selectedIndex].imgDesktop
 			: mainSectionImages[selectedIndex].imgMobile;
 
@@ -67,6 +67,34 @@ export default function MainContent({ appWidth }) {
 						src={selectedImage}
 						alt="chairs and desk with bonsai tree"
 					/>
+					<div className="change-img-button-container-mobile">
+						<div
+							className="button-left"
+							onClick={() => handleArrowClick('left')}
+						>
+							<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M13 0L1 12l12 12"
+									stroke="#FFF"
+									fill="none"
+									fillRule="evenodd"
+								/>
+							</svg>
+						</div>
+						<div
+							className="button-right"
+							onClick={() => handleArrowClick('right')}
+						>
+							<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1 0l12 12L1 24"
+									stroke="#FFF"
+									fill="none"
+									fillRule="evenodd"
+								/>
+							</svg>
+						</div>
+					</div>
 
 					<div className="main-info-container">
 						<div className="main-info">

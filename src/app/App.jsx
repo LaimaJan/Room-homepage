@@ -3,9 +3,16 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import MainContent from './components/MainContent/MainContent';
 import AboutOurFurniture from './components/AboutOurFurniture/AboutOurFurniture';
+import HiddenTopBar from './components/HiddenTopBar/HiddenTopBar';
 
 function App() {
 	const [appWidth, setAppWidth] = useState(0);
+	const [hamburgerIconClicked, setHamburgerIconClicked] = useState(false);
+
+	const openCloseTopNav = () => {
+		setHamburgerIconClicked(!hamburgerIconClicked);
+		console.log(hamburgerIconClicked);
+	};
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -24,7 +31,11 @@ function App() {
 	return (
 		<>
 			<div className="App">
-				<Navigation />
+				<HiddenTopBar
+					hamburgerIconClicked={hamburgerIconClicked}
+					openCloseTopNav={openCloseTopNav}
+				/>
+				<Navigation openCloseTopNav={openCloseTopNav} />
 				<MainContent appWidth={appWidth} />
 				<AboutOurFurniture />
 			</div>

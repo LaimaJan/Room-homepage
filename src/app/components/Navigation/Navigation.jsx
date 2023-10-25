@@ -1,9 +1,18 @@
 import './Navigation.css';
 
-export default function Navigation() {
+export default function Navigation({ openCloseTopNav }) {
 	return (
 		<nav>
 			<div className="navigation-container">
+				<div className="hamburger-icon-container" onClick={openCloseTopNav}>
+					<svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z"
+							fill="#FFF"
+							fillRule="evenodd"
+						/>
+					</svg>
+				</div>
 				<div className="logo-container">
 					<svg width="62" height="14" xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -13,6 +22,7 @@ export default function Navigation() {
 						/>
 					</svg>
 				</div>
+
 				<div className="nav-links-container">
 					<a href="#">home</a>
 					<a href="#">shop</a>

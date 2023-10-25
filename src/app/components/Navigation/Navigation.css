@@ -3,10 +3,13 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-left: 90px;
 	gap: 60px;
 	margin: 60px 0 60px 80px;
 	z-index: 9999;
+}
+
+.hamburger-icon-container {
+	display: none;
 }
 
 .logo-container svg {
@@ -30,4 +33,34 @@
 
 .nav-links-container a:hover {
 	border-bottom: 2px solid var(--white);
+}
+
+@media screen and (max-width: 1360px) {
+	.navigation-container {
+		position: fixed;
+		max-width: 375px;
+		width: 100%;
+		gap: 0;
+		margin: 0;
+		margin-top: 40px;
+	}
+
+	.hamburger-icon-container {
+		display: block;
+		position: absolute;
+		left: 30px;
+	}
+
+	.logo-container {
+		max-width: 375px;
+		width: 100%;
+	}
+
+	.logo-container svg {
+		transform: scale(1.2);
+	}
+
+	.nav-links-container {
+		display: none;
+	}
 }

@@ -1,7 +1,6 @@
 # Recreated Room homepage from www.frontendmentor.io
 
-To run this project, install it locally using npm:
+---To run this project, install it locally using npm:
 
-
-$ npm install /
-$ npm run dev
+- $ npm install 
+- $ npm run dev
